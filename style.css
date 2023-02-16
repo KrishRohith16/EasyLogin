@@ -95,7 +95,7 @@ form .input_field input:active,form .input_field input:focus{
 }
 form .input_field input[type=submit]{
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 0px;
     border-radius: 50px;
     align-self: center;
     width: 50%;
@@ -120,10 +120,23 @@ form .input_field input[type=submit]:hover{
 form .input_field .links{
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 10px 20px;
 }
+form .input_field .links a:nth-child(2){
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid aqua;
+    color: aqua ;
+    box-shadow:  4px 4px 6px inset #111,-2px -2px 2px inset #222;
+}
+form .input_field .links a:nth-child(2):hover{
+    background: #04c1c190;
+    color: #fff;
+}
+
 form .input_field .links a{
-    font-size: 14px;
+    font-size: 12px;
     color: #777;
     font-weight: 500;
     text-decoration: none;
