@@ -7,11 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Login</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <div class="container">
-        <form action="" method="get"></form>
+        <form action="" method="get">
+            <h1>Login</h1>
+            <div class="input_field">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password" minlength="4"
+                    maxlength="12">
+                <div class="links">
+                    <a href="#"><span>forgot password</span></a>
+                    <a href="#"><span>signup</span></a>
+                </div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
     </div>
 </body>
 

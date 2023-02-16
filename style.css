@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     width: 100%;
@@ -42,6 +45,9 @@ form{position: relative;
     height: 99%;
     background: #111;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 form::before{
     position: absolute;
@@ -50,5 +56,78 @@ form::before{
     content: "";
     background: #ffffff09;
     border-radius: 10px;
+}
+form h1{
+    color: #111;
+    letter-spacing: 10px;
+    margin-top:30px ;
+    text-shadow: 2px 2px 0px aqua;
+}
+form .input_field{
+    margin-top: 20px;
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     z-index: 10;
+}
+form .input_field input:hover{
+    border-bottom: 1px solid aqua;
+}
+form .input_field input{
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 2px 2px 4px #000;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    border-radius: 20px;text-align: center;
+}
+form .input_field input:active,form .input_field input:focus{
+    transition:.5s;
+    background: #04c1c1;
+    color: #111;
+    font-weight: 700;
+    letter-spacing:2px;
+}
+form .input_field input[type=submit]{
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 50px;
+    align-self: center;
+    width: 50%;
+    background: #777;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: 5px;
+}
+form .input_field input[type=submit]:hover{
+    transition: .5s;
+    background: #04c1c1;
+    letter-spacing: 2px;
+    transform: translateY(-3px);
+    box-shadow: 0 0 0 px aqua,
+                2px 2px 10px aqua,
+                4px 4px 10px aqua;
+}
+
+form .input_field .links{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+form .input_field .links a{
+    font-size: 14px;
+    color: #777;
+    font-weight: 500;
+    text-decoration: none;
+}
+form .input_field .links a:hover{
+    color:#04c1c1 ;
 }
